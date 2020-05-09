@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href= "mystyle.css">
+<title> Adventures in HTML and CSS </title>
+<meta charset="UTF-8">
+<meta name = "Description" content = "Personal page of Liam Shannon. Documenting learning">
+<meta  name = "Author" content = "Liam Shannon">
+
+</head>
+
+<body>
+<h1>iteralogic consultancy services</h1> 
+
+
+<h2>Introduction</h2>
+<p>Initially the plan is to use this page to document my lessons in HTML and CSS, with the intention of developing enough understanding to create a functioning and aesthetically coherent webpage for the purposes of documenting whatever projects take my fancy. In the meantime please bear with the incredibly obtuse formatting.</p>
+
+
+<h2> References </h2>
+<ul>
+<li><a href = "https://html.com";> HTML.com </a> <br>Tutorials in HTML and CSS</li>
+<li><a href = "https://stackoverflow.com/"> Stack Overflow </a> <br> Find solutions to programming problems</li>
+<li><a href = "https://getmimo.com/"> Mimo </a> <br> A useful tutorial for understanding HTML and CSS, as well as a range of other languages. However keep in mind that there is no ability to review your notes without paying for the hefty subscription fee. It is nevertheless very accessible introduction to coding. </li>
+<li><a href = "https://www.w3schools.com"> W3Schools </a> This is a great reference website for looking up tags, attributes and other</li>
+</ul>
+
+
+<p><mark><i>This section is to be moved into a side bar (?) at some stage</i></mark></p>
+
+
+<h2> Displaying tags on an HTML page </h2>
+
+<p>Writing the tags as written in the code will just process the tags along with all other HTML. <br>
+	Any tags written on a HTML page (for example in building a tutorial) will need to be displayed as follows: </p>
+	<pre>
+	 <b>&amp;lt&#59;</b> will display as <b>&lt;</b><br>
+	 <b>&amp;gt&#59;</b> will display as <b>&gt;</b><br></pre>
+<p> For a full list of references for HTML entity codes click <a href="https://www.w3schools.com/charsets/ref_utf_basic_latin.asp"> here.</a></p>
+
+
+
+<h2> Definitions</h2>
+<p> This section of the page will be for defining the 'grammatical' terms for general structural elements in HTML and CSS. <br> This is distinguished from lists of specific tags or attributes in that it is designed to give a higher level view of the structure of the language</p>
+ 
+ 	<h3>HTML</h3>
+ 		<ul>
+ 			<li><b>Tags</b> - Are placed at the start and end of an element. Opening tags are surrounded by <b>&lt; &gt;</b>, while closing tags are displayed as <b>&lt;/&gt;</b>. <br>Some tags are open and do not require a closing tag. <a href = "https://www.w3schools.com/tags/ref_byfunc.asp"> List of Tags by function</a></li>
+			<li><b>Attributes</b> - Attributes allow you to customise a tag, and are defined within the opening tag <a href = "https://www.w3schools.com/tags/ref_attributes.asp">List of Attributes</a></li>
+ 			<li><b>Elements</b> - An element is everything contained within two tags</li>
+		</ul>
+	<h3>CSS</h3>
+		<ul>
+			<li><b>Selector</b> - points to the html element you want to style. The tag heading without <b>&lt; &gt;</b>)</li>
+			<li><b>Property</b> - The property of the element that you intend to change <i>eg. Color</i> <a href = "https://www.w3schools.com/cssref/">List of Properties</a></li>
+			<li><b>Value</b> - The value you want the property to become. Can be a numerical or descriptive value <i>eg. "Blue"</i> </li>
+			<li><b>Declaration</b> - A property and a Value, separated by <b>:</b>, finished with <b>;</b>
+			<li><b>Declaration Block</b> - A series of declarations contained within curly brackets. <i>eg. {color:blue;font-size:12px;}</i></li>
+			<li><b>Functions</b> - A function completes a task based on predetermined inputs. Arguments are placed within brackets after calling the function. To be used as values for properties. <br><i>eg. linear-gradient(red, yellow, green)</i> <a href="https://www.w3schools.com/cssref/css_functions.asp"> List of functions</a></li>
+		</ul>
+	
+
+<h2> Minimum code </h2>
+<p><i> This section will involve the creation of a template for the minimum code required to make a functional webpage. <br>This will include links to a style sheet for formatting, but little else. Non-essential items will be considered modular to be added after the fact. <br> This will allow for quick copying to create new pages within this site, as well as a standardized formatting to be consistent across the website. </i></p>
+
+
+<h3> Required HTML</h3>
+
+	<pre>
+	<b>&lt;!DOCTYPE html&gt;</b><i> Defines which version of HTML is to be used.</i><br>
+	<b>&lt;html&gt;</b><i> Marks that the following is in HTML</i><br>
+	<b>&lt;head&gt;</b> <i> The 'head' tag is a container for metadata. It is not displayed. </i><br>
+	<b>&lt;title&gt;&lt;/title&gt;</b><i> The Title of the page - displayed in Tabs and Search results</i><br>
+	<b>&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt; </b><i> Invokes CSS style sheet</i><br>
+	<b>&lt;/head&gt;</b><br>
+	<b>&lt;body&gt;</b><i> Marks the start of visible content</i><br>
+	<b>&lt;/body&gt;</b><br>
+	<b>&lt;/html&gt; </b><br></pre>
+
+<p> In addition to the above tags, the html file needs to be saved as the <b>.html</b> file type.
+
+
+<h3> Invoking CSS Style Sheet </h3>
+<p> CSS can be invoked in three different ways: </p>
+<ul>
+	<li>In the HTML document header,placed between the &lt;style&gt; tags: <br>
+		<pre>
+		h1 {color: maroon; margin-left: 40px;}</pre></li>
+
+	<li> Inline in the HTML document, within the "style" attribute of the relevant element<br>
+	 	<pre>
+	 	&lt;h1 style="color:blue;text-align:center;"&gt;This is a heading&lt;/h1&gt;</pre></li>
+
+	<li>In a separate style sheet, placing the following element between the &lt;head&gt; tags<br>
+		<pre>
+		&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;  link </pre></li>
+</ul>
+
+<p>External style sheets are to be saved as the <b>.css</b> file type.</p>
+
+<p>Multiple CSS sheets can be used simultaneously, but the most recently read will be used.</p>
+
+<p> For more detail, click <a href = 'https://www.w3schools.com/css/css_howto.asp'>how to add CSS</a></p>
+
+<h2> Other potential site projects </h2>
+<ul>
+	<li> online CV </li>
+	<li> engineering learnings </li>
+	<li> wellness/mental health(?) blog </li>
+	<li> database of local contacts </li>
+	<li> engineering services contact site (requires abn)</li>
+	<li> ableton, recording, sound design and compositional learnings</li>
+</ul>
+
+<h2> List of domain names </h2>
+<ul>
+	<li>burneng.com</li>
+	<li>engliam.com</li>
+	<li>engmelb.com</li>
+	<li>liamshannon.com.au</li>
+	<li>lrseng.com</li>
+	<li>mecmel.com</li>
+	<li>schpunkers.com</li>
+	<li>yarramec.com</li>
+	<li>ichooch.com</li>
+	<li>dotdotdelta.com</li>
+	<li>7dof.com - <i> company listed in manilla</i></li>
+	<li>meclever.com</li>
+	<li>mecleva.com</li>
+	<li>levermec - <i> trading name similar to fraser-lever in qld.</i></li>
+	<li>mec2.com - <i> US company using this trading name</i>	</li>
+	<li>compress.com</li>
+	<li>engadvisor.com <i> too common </i></li>
+	<li>edoubledot.com</li>
+	<li>deltaconsult.com - <i>too common </i></li>
+	<li>iteralogic.com - <i> Similar to Terralogic - environmental consultancy</li>
+	<li>iterlogic.com</li>
+	<li>iterlog.com</li>
+	<li>engsqr.com</li>
+	<li>engmob.com</li>
+	<li>righthandmec.com - <i> very common</i></li>
+	<li>fxmec.com - <i> some similarly named in slightly different industries</i></li>
+	<li>deg7th.com</li>
+	<li>7dfree</li>
+	<li>7dmech</li>
+
+</ul>
+
+<h2> Domain purchase options </h2>
+<p> Purchase cheap domain from auctions, or buy an unclaimed name 	</p>
+<ul>
+	
+		<li> <a href="https://au.auctions.godaddy.com/">Godaddy Auctions</a></li>
+		<li> <a href="https://godaddy.com">Godaddy</a></li>
+		<li> <a href="https://www.snapnames.com">Snapnames</a></li>
+		<li> <a href="https://domains.google/">Google Domains</a></li>
+		<li> <a href="https://sedo.com">Sedo Domains</a></li>
+		<li> <a href="https://www.netregistry.com.au"> Netregistry</a></li>
+		<li> <a href="http://www.namejet.com/">NameJet</a></li>
+</ul>
+
+<h2> What is a Boobus? </h2>
+<p> A boobus is a coot.</p>
+
+
+<h2> Web Hosting Options </h2>
+<ul>
+	<li></li>
+	<li></li>
+</ul>
+
+<h2> Contact me </h2>
+<p><mark><i> This section is to include a contact form that will forward to my designated email address.</i></p></mark>
+<a href = "https://au.linkedin.com/in/liamshannon"> Linkedin </a><br>
+<a href = "https://www.facebook.com/liam.shannon"> Facebook </a><br>
+<a href = "https://soundcloud.com/goosecheese"> Soundcloud</a><br>
+
+<h2> Tasks to complete </h2>
+<ul>
+	<li>Index side bar</li>
+	<li>Contact form</li>
+	<li>Link to template CSS and HTML</li>
+	<li>Some kind of image to demonstrate the coding</li>
+	<li>List of Hosting options with comparison of features - table format</li>
+	<li>Separate non-essential items onto secondary pages</li>
+
+</ul>
+
+
+
+
+</body>
+
+</html>

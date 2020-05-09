@@ -1,0 +1,37 @@
+body {
+	background-color: lightblue; 
+	font-family:helvetica;
+	}
+h1 {
+	color: white; 
+	background-color: blue;
+	padding: 2em 2em 2em 2em;
+	margin: 0 0 0 0;
+	font-family:Trebuchet MS;
+}
+h2 {
+	color: white;
+	margin: 1em 0 1em 0;
+	background-color:grey;
+	padding: 0.5em 0 0.5em 1em
+}
+
+h3{
+	color: grey;
+	margin: 1em 0 1em 1em;
+}
+
+p{
+	margin: 1em 15em 1em 1em;
+
+}
+
+code{
+	background-color:white;
+	margin: 1em 3em 1em 3em;
+	}
+
+pre{background-color:white; 
+	margin: 1em 25em 1em 4em; 
+	padding: 1em 0 1em 0;
+	}
