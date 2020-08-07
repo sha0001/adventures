@@ -22,7 +22,7 @@ h3{
 }
 
 p{
-	margin: 1em 15em 1em 1em;
+	margin: 1em 0 1em 1em;
 
 }
 
@@ -31,7 +31,7 @@ code{
 	margin: 1em 3em 1em 3em;
 	}
 
-pre{background-color:white; 
-	margin: 1em 25em 1em 4em; 
+pre{	background-color:white; 
+	margin: 1em 4em 1em 4em; 
 	padding: 1em 0 1em 0;
 	}
