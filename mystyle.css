@@ -28,6 +28,7 @@ p{
 
 
 code{	background-color:white; 
-	margin: 1em 4em 1em 4em; 
+	border: 0;
+	margin: 3em 4em 3em 4em; 
 	padding: 1em 0 1em 0;
 	}
